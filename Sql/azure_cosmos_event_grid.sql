@@ -1,0 +1,15 @@
+create table if not exists azure_cosmos_event_grid(
+cosmos_schema_code Integer not null,
+event_id Integer null,
+sequence_id Integer null,
+event_name varchar(255) null,
+role_id varchar(255) null,
+key_attribute Integer null,
+event_type varchar(255) null,
+approximate_event_duration varchar(255) null,
+event_status varchar(255) null,
+actual_duration varchar(255) null,
+event_projection varchar(255) null,
+is_scheduled varchar(255) null,
+entity_state varchar(255) null,
+constraint azure_cosmos_event_grid_pk primary key(cosmos_schema_code));

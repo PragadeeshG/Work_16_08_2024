@@ -1,0 +1,16 @@
+create table if not exists azure_cosmos_app_service(
+cosmos_schema_code Integer not null,
+data_dictionary Integer null,
+number_of_Instances Integer null,
+metadata varchar(255) null,
+query_plan Integer null,
+optimizable char null,
+performance_tunable char null,
+service_name varchar(255) null,
+service_code varchar(255) null,
+data_engine varchar(255) null,
+underlying_machine varchar(255) null,
+jvm_id varchar(255) null,
+hardwares_applicable varchar(255) null,
+enterprise_system varchar(255) null,
+constraint azure_cosmos_app_service_pk primary key(cosmos_schema_code));
